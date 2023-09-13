@@ -56,14 +56,15 @@ export function Home() {
               </Card.Body>
             </Card>
             <Button
+              variant="secondary"
               className="fw-bold mt-2"
-              style={{
-                backgroundColor: "#BD3430",
-                borderColor: "#BD3430",
-                color: "#2c2926",
-              }}
+              // style={{
+              //   backgroundColor: "#BD3430",
+              //   borderColor: "#BD3430",
+              //   color: "#2c2926",
+              // }}
             >
-              MORE EVENTS
+              SERVICES
             </Button>
           </Container>
         </Container>

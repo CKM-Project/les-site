@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { NavBar } from "../NavBar/NavBar";
 import { Footer } from "../Footer/Footer";
 // import Wordcloud from "../Images/WordCloud.png";

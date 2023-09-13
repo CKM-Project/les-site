@@ -24,7 +24,7 @@ export function NavBar() {
           <img alt="" src={Logo} id="logo"></img>
         </Navbar.Brand>
         <Nav className="ms-auto fs-6 fw-bold">
-          <Nav.Link href="/" id="link">
+          <Nav.Link href="/" id="link" className="nav-link">
             HOME
           </Nav.Link>
         </Nav>
@@ -37,7 +37,7 @@ export function NavBar() {
         <ColoredLine />
         <Nav className="fs-6 fw-bold">
           <Nav.Link href="/services" id="link">
-            EVENTS
+            SERVICES
           </Nav.Link>
         </Nav>
         <ColoredLine />

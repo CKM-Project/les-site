@@ -5,7 +5,7 @@
 #container {
   position: relative;
   min-height: 100vh;
-  background-color: #d1d2d4;
+  background-color: whitesmoke;
   color: #2c2926;
   padding-bottom: 2rem;
 }
@@ -16,9 +16,6 @@
 
 #logo {
   height: 5rem;
-}
-#link {
-  color: #2c2926;
 }
 
 #button {
@@ -41,6 +38,10 @@
 .p {
   color: #2c2926;
 }
+
+/* #nva-link.hover {
+  color: blue;
+} */
 
 .red-button {
   color: #e42e31;
