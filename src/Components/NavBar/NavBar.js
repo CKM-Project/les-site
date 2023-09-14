@@ -18,7 +18,7 @@ export function NavBar() {
   );
 
   return (
-    <Navbar id="navbar" className="sticky-top">
+    <Navbar className="sticky-top yellow-bg">
       <Container className="hstack gap-3">
         <Navbar.Brand href="/">
           <img alt="" src={Logo} id="logo"></img>

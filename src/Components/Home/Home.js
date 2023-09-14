@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavBar } from "../NavBar/NavBar";
 import { Footer } from "../Footer/Footer";
-import IMAGE from "../Images/Logo.png";
+import IMAGE from "../Images/Jumbotron.png";
+
 import "../Styles/Styles.css";
 import { Container, Card, Button } from "react-bootstrap";
 
@@ -20,53 +21,26 @@ export function Home() {
 
       <NavBar />
       <div id="container">
+        <img
+          src={IMAGE}
+          alt="My Image"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "80%",
+            zIndex: 0,
+            objectFit: "cover",
+          }}
+        />
         <Container className="d-flex align-items-center flex-column">
-          <h1 className="mt-3 fw-bold black-text">COMPANY</h1>
-          <h3 className="mb-3 fw-bold black-text">Tagline</h3>
-          <img alt="Word Cloud" src={IMAGE} style={{ height: "35rem" }}></img>
-          <Container className="d-flex align-items-center flex-column mt-5">
-            <h2 className="text-center">Upcoming Events</h2>
-
-            <Card className="w-50 m-auto mt-3">
-              <Card.Header
-                style={{
-                  backgroundColor: "#BD3430",
-                  color: "2C2926",
-                  fontWeight: "bold",
-                }}
-              >
-                Featured
-              </Card.Header>
-              <Card.Img variant="top" src={IMAGE} />
-              <Card.Body>
-                <Card.Title>Event Name</Card.Title>
-                <Card.Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </Card.Text>
-                <Button
-                  className="fw-bold"
-                  style={{
-                    backgroundColor: "#2C2926",
-                    borderColor: "#2C2926",
-                  }}
-                >
-                  REGISTER
-                </Button>
-              </Card.Body>
-            </Card>
-            <Button
-              variant="secondary"
-              className="fw-bold mt-2"
-              // style={{
-              //   backgroundColor: "#BD3430",
-              //   borderColor: "#BD3430",
-              //   color: "#2c2926",
-              // }}
-            >
-              SERVICES
-            </Button>
-          </Container>
+          <h1 className="mt-3 fw-bold text-white" style={{ zIndex: 1 }}>
+            COMPANY
+          </h1>
+          <h3 className="mb-3 fw-bold text-white" style={{ zIndex: 1 }}>
+            Tagline
+          </h3>
         </Container>
       </div>
       <Footer />
