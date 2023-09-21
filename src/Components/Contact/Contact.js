@@ -62,7 +62,10 @@ export function Contact() {
           <h1 className="mt-3 mb-3 fw-bold">Contact Us</h1>
           <p className="mt-2 mb-5 m-auto">555-555-5555 | test@gmail.com</p>
 
-          <Form className="w-50" id="contact-form">
+          <Form
+            className="d-flex align-items-center flex-column w-50"
+            id="contact-form"
+          >
             <input type="hidden" name="contact_number" />
             <InputGroup className="mb-3">
               <InputGroup.Text
@@ -127,7 +130,7 @@ export function Contact() {
               />
             </InputGroup>
 
-            <Button type="submit" className="fw-bold mt-2" variant="dark">
+            <Button type="submit" className="fw-bold w-25 mt-2" variant="dark">
               SEND
             </Button>
           </Form>
