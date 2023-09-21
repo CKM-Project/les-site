@@ -2,10 +2,8 @@ import React from "react";
 import { NavBar } from "../NavBar/NavBar";
 import { Footer } from "../Footer/Footer";
 import IMAGE from "../Images/Logo.png";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "../Styles/Styles.css";
-import { Container, Card } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 
 export function About() {
   return (
@@ -24,7 +22,11 @@ export function About() {
       <div id="container">
         <Container className="d-flex align-items-center flex-column">
           <h1 className="mt-3 mb-3 fw-bold">About</h1>
-          <img alt="Word Cloud" src={IMAGE}></img>
+          <Image
+            alt="Word Cloud"
+            src={IMAGE}
+            style={{ height: "25rem" }}
+          ></Image>
           <p className="w-75 mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem

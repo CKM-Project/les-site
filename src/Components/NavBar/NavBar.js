@@ -10,39 +10,33 @@ export function NavBar() {
       <div
         className="vr"
         style={{
-          color: "#e42e31",
-          height: "2rem",
+          color: "#d1d2d4",
+          height: "2.5rem",
         }}
       ></div>
     </div>
   );
 
   return (
-    <Navbar id="navbar" className="sticky-top">
+    <Navbar className="sticky-top blue-bg">
       <Container className="hstack gap-3">
         <Navbar.Brand href="/">
           <img alt="" src={Logo} id="logo"></img>
         </Navbar.Brand>
         <Nav className="ms-auto fs-6 fw-bold">
-          <Nav.Link href="/" id="link">
+          <Nav.Link href="/" id="link" className="text-white">
             HOME
           </Nav.Link>
         </Nav>
         <ColoredLine />
         <Nav className="fs-6 fw-bold">
-          <Nav.Link href="/about" id="link">
+          <Nav.Link href="/about" id="link" className="text-white">
             ABOUT
           </Nav.Link>
         </Nav>
         <ColoredLine />
         <Nav className="fs-6 fw-bold">
-          <Nav.Link href="/services" id="link">
-            EVENTS
-          </Nav.Link>
-        </Nav>
-        <ColoredLine />
-        <Nav className="fs-6 fw-bold">
-          <Nav.Link href="/contact" id="link">
+          <Nav.Link href="/contact" id="link" className="text-white">
             CONTACT US
           </Nav.Link>
         </Nav>

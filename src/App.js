@@ -3,7 +3,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Components/Home/Home.js";
 import { About } from "./Components/About/About.js";
-import { Services } from "./Components/Services/Services.js";
 import { Contact } from "./Components/Contact/Contact.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -18,7 +17,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/" element={<Home />} />
       </Routes>
