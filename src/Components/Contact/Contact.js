@@ -2,11 +2,8 @@ import React, { useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { NavBar } from "../NavBar/NavBar";
 import { Footer } from "../Footer/Footer";
-// import Wordcloud from "../Images/WordCloud.png";
-// import BUAIL from "../Images/BUAIL.PNG";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../Styles/Styles.css";
 import { Container, Form, Button, InputGroup } from "react-bootstrap";
+import "../Styles/Styles.css";
 
 export function Contact() {
   useEffect(() => {
@@ -63,10 +60,18 @@ export function Contact() {
       <div id="container">
         <Container className="d-flex align-items-center flex-column">
           <h1 className="mt-3 mb-3 fw-bold">Contact Us</h1>
+          <p className="mt-2 mb-5 m-auto">555-555-5555 | test@gmail.com</p>
+
           <Form className="w-50" id="contact-form">
             <input type="hidden" name="contact_number" />
             <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon1">Name</InputGroup.Text>
+              <InputGroup.Text
+                id="basic-addon1"
+                style={{ backgroundColor: "#e42e31" }}
+                className="text-white fw-bold"
+              >
+                Name
+              </InputGroup.Text>
               <Form.Control
                 type="text"
                 name="user_name"
@@ -76,7 +81,13 @@ export function Contact() {
               />
             </InputGroup>
             <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon2">Email</InputGroup.Text>
+              <InputGroup.Text
+                id="basic-addon2"
+                style={{ backgroundColor: "#e42e31" }}
+                className="text-white fw-bold"
+              >
+                Email
+              </InputGroup.Text>
               <Form.Control
                 type="email"
                 name="user_email"
@@ -86,7 +97,13 @@ export function Contact() {
               />
             </InputGroup>
             <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon3">Phone Number</InputGroup.Text>
+              <InputGroup.Text
+                id="basic-addon3"
+                style={{ backgroundColor: "#e42e31" }}
+                className="text-white fw-bold"
+              >
+                Phone Number
+              </InputGroup.Text>
               <Form.Control
                 type="phone"
                 name="user_phone"
@@ -96,7 +113,12 @@ export function Contact() {
               />
             </InputGroup>
             <InputGroup className="mb-3">
-              <InputGroup.Text>Message</InputGroup.Text>
+              <InputGroup.Text
+                style={{ backgroundColor: "#e42e31" }}
+                className="text-white fw-bold"
+              >
+                Message
+              </InputGroup.Text>
               <Form.Control
                 name="message"
                 placeholder="Enter your message here..."
@@ -105,15 +127,7 @@ export function Contact() {
               />
             </InputGroup>
 
-            <Button
-              type="submit"
-              className="fw-bold mt-2"
-              style={{
-                backgroundColor: "#BD3430",
-                borderColor: "#BD3430",
-                color: "#2c2926",
-              }}
-            >
+            <Button type="submit" className="fw-bold mt-2" variant="dark">
               SEND
             </Button>
           </Form>
