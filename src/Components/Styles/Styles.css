@@ -88,6 +88,16 @@ hr {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
+.error-message {
+  color: #e42e31;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #30971b;
+  font-size: 14px;
+}
+
 /* #mediaSize {
   width: 25%;
 } */
