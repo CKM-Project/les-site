@@ -15,29 +15,29 @@ export function ContactForm() {
     emailjs.init("OFERgPtPZrXndL-iq");
 
     const validateForm = () => {
-        const errors = {};
-      
-        if (!user_name.trim()) {
-          errors.user_name = "Name is required";
-        }
-      
-        if (!user_email.trim()) {
-          errors.user_email = "Email is required";
-        } else if (!/\S+@\S+\.\S+/.test(user_email)) {
-          errors.user_email = "Invalid email address";
-        }
-      
-        if (!user_phone.trim()) {
-          errors.user_phone = "Phone number is required";
-        }
-      
-        if (!message.trim()) {
-          errors.message = "Message is required";
-        }
-      
-        setFormErrors(errors);
-        return Object.keys(errors).length === 0;
-      };
+      const errors = {};
+
+      if (!user_name.trim()) {
+        errors.user_name = "Name is required";
+      }
+
+      if (!user_email.trim()) {
+        errors.user_email = "Email is required";
+      } else if (!/\S+@\S+\.\S+/.test(user_email)) {
+        errors.user_email = "Invalid email address";
+      }
+
+      if (!user_phone.trim()) {
+        errors.user_phone = "Phone number is required";
+      }
+
+      if (!message.trim()) {
+        errors.message = "Message is required";
+      }
+
+      setFormErrors(errors);
+      return Object.keys(errors).length === 0;
+    };
 
     const handleSubmit = async (event) => {
       event.preventDefault();
@@ -83,10 +83,7 @@ export function ContactForm() {
 
   return (
     <>
-      <Form
-        className="d-flex align-items-center flex-column w-50"
-        id="contact-form"
-      >
+      <Form className="d-flex align-items-center flex-column" id="contact-form">
         <input type="hidden" name="contact_number" />
         <InputGroup>
           <InputGroup.Text
