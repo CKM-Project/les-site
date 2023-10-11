@@ -4,6 +4,9 @@ import Logo from "../Images/Logo.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Styles/Styles.css";
 
+// remove
+import OffCanvas from "../Contact/OffCanvas";
+
 export function NavBar() {
   const ColoredLine = () => (
     <div className="d-flex align-items-center">
@@ -36,9 +39,10 @@ export function NavBar() {
         </Nav>
         <ColoredLine />
         <Nav className="fs-6 fw-bold">
-          <Nav.Link href="/contact" id="link" className="text-white">
+          {/* <Nav.Link href="/contact" id="link" className="text-white">
             CONTACT US
-          </Nav.Link>
+          </Nav.Link> */}
+          <OffCanvas />
         </Nav>
       </Container>
     </Navbar>
